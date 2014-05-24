@@ -46,6 +46,6 @@ cacheSolve <- function(z, ...) {
 			return(inv)
 	}
 	data <- z$get()
-	z$setinv(solve(data))
+	z$setinv(solve(data,...))
 	z$getinv()
 }
