@@ -7,7 +7,7 @@
 
 ## Function 'cacheSolve' takes an object 'z' created by the function makeCacheMatrix 
 ## as input argument. If the inverse 'inv' hasn't been calculated and stored in object 'z') 
-## it will be computed, returned and stored it the variable 'inv' of object 'z'.
+## it will be computed, returned and stored in the variable 'inv' of object 'z'.
 ## Otherwise the message 'getting cached data' will be returned together with the stored
 ## inverse 'inv'.
 
@@ -37,7 +37,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## input argument. If the inverse 'inv' hasn't been calculated yet (and stored in object 'z') 
 ## the inverse 'inv' of matrix 'x' (of object 'z') will be computed, returned and stored 
 ## in the variable 'inv' of object 'z'. Otherwise the message 'getting cached data' will 
-## be returned followed by the inverse 'inv'.
+## be returned followed by the stored inverse 'inv'.
 
 cacheSolve <- function(z, ...) {
       inv <- z$getinv()
